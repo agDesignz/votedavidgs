@@ -1,0 +1,23 @@
+.content-box {
+  width: $full-width;
+  display: grid;
+  gap: $gap-sm;
+  margin: auto;
+  justify-items: start;
+
+  &--full {
+    width: 100%;
+  }
+
+  &--narrow {
+    max-width: 75rem;
+
+    &--half {
+
+      @mixin bp-md {
+        
+        max-width: 40rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.u-full-height {
+  height: 100%;
+}
+
+.u-grid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.u-pv-sm {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.u-pv {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  @mixin bp-md {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  @mixin bp-lg {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
+  @mixin bp-xl {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+}

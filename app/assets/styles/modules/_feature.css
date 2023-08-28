@@ -1,0 +1,28 @@
+.feature {
+  justify-items: center;
+  text-align: center;
+  grid-template-rows: max-content min-content 1fr auto;
+  gap: 1.2rem;
+
+  &__fig {
+    height: 6rem;
+
+    @mixin bp-md {
+      height: 8rem;
+    }
+  }
+
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    @mixin bp-md {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+  }
+}

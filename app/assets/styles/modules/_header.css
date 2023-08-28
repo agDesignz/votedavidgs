@@ -1,0 +1,80 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: $header-height;
+  background: linear-gradient(to bottom, rgba($color-primary-dark, .95), rgba($color-primary, .95));
+
+  &__logo {
+    height: 80%;
+  }
+  &__container {
+    width: $full-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    @mixin bp-sm {
+      width: 100%;
+      padding: 0 10rem;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    height: 100%;
+    gap: 1.5rem;
+    align-items: center;
+
+    @mixin bp-sm {
+      gap: $gap-nav;
+    }
+
+    @mixin bp-lg {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__soc {
+    color: $color-white;
+    font-size: 4rem;
+  }
+
+  &__donate-box {
+
+      &,
+      &:link,
+      &:visited {
+        font-size: 2.4rem;
+        background: $color-secondary-light;
+        color: $color-white;
+
+        align-self: stretch;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        padding: .5rem 1.5rem;
+
+        @mixin bp-sm {
+          font-size: 3.4rem;
+        }
+      }
+
+      &:hover,
+      &:active {
+        /* color: $color-primary; */
+        background: $color-secondary-lightest;
+      }
+  }
+
+  &--fixed {
+    position: fixed;
+    height: 6.5rem;
+    z-index: 120;
+    background: linear-gradient(25deg, rgba($color-secondary-darkest, .9), rgba($color-secondary-dark, .9));
+  }
+}

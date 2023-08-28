@@ -1,0 +1,58 @@
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.heading-1 {
+  font-family: $font-primary;
+  font-size: 6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @mixin bp-md {
+    font-size: 8rem;
+  }
+}
+
+.heading-2 {
+  font-family: $font-primary;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  @mixin bp-md {
+    font-size: 3.5rem;
+  }
+
+  &--larger {
+    font-size: 4rem;
+
+    @mixin bp-sm {
+      font-size: 5rem;
+    }
+  }
+}
+
+.heading-3 {
+  font-size: 2rem;
+  font-weight: 400;
+  display: inline-block;
+  text-transform: uppercase;
+
+}
+
+p {
+  font-family: $font-secondary;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.text-green {
+  color: $color-secondary;
+}
+
+.text-purple {
+  color: $color-primary;
+}

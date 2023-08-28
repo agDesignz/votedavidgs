@@ -1,0 +1,46 @@
+.home-hero {
+  max-height: 100vh;
+  padding-top: $header-height;
+  background: $color-secondary-dark;
+  background: linear-gradient(to right, rgba($color-grey-dark, .8), rgba($color-grey-dark, .8)), url(./assets/images/hero-1-lg.jpg) no-repeat center top;
+  background: linear-gradient(to right, rgba($color-secondary-darkest, .8), rgba($color-grey-dark, .0)), url(./assets/images/hero-1-lg.jpg) no-repeat center;
+
+  &__container {
+    padding: 8% 4%;
+    display: grid;
+    justify-content: center;
+
+    @mixin bp-md {
+      justify-content: start;
+    }
+
+    @mixin bp-lg {
+      padding: 15rem 10rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    gap: $gap-md;
+    max-width: 48rem
+  }
+
+  &__heading {
+    display: grid;
+    color: $color-white;
+    font-family: $font-primary;
+    line-height: 1;
+    text-align: center;
+
+    @mixin bp-md {
+      text-align: left;
+    }
+  }
+
+  &__donate {
+    display: grid;
+    width: 100%;
+  }
+
+}

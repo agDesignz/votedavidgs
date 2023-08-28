@@ -1,0 +1,21 @@
+.background {
+
+  &--purple {
+    background: $bg-primary;
+    color: $color-white;
+  }
+
+  &--grey {
+    background-color: $color-grey-medium;
+    color: $color-primary-dark;
+  }
+
+  &--white {
+    color: $color-primary-dark;
+  }
+
+  &--green {
+    background: $color-secondary-dark;
+    color: $color-white;
+  }
+}
