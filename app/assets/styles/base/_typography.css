@@ -7,13 +7,18 @@ body {
 
 .heading-1 {
   font-family: $font-primary;
-  font-size: 6rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 700;
   text-transform: uppercase;
 
-  @mixin bp-md {
-    font-size: 8rem;
+  @mixin bp-sm {
+    font-size: 6rem;
   }
+
+  @mixin bp-lg {
+    font-size: 6.5rem;
+  }
+
 }
 
 .heading-2 {
